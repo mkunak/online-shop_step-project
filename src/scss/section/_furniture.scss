@@ -1,0 +1,272 @@
+.furniture-title {
+  font-size: 22px;
+}
+
+.furniture-card {
+  border: none;
+  background-color: #f4f5f7;
+  border-radius: 0;
+  overflow: hidden;
+
+  &-img {
+    height: 260px;
+  }
+
+  &-body {
+    border: 1px solid #f2f2f2;
+    background-color: #ffffff;
+  }
+
+  &-line {
+    position: relative;
+  }
+
+  &-line::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 35px;
+    height: 5px;
+    background-color: #d58e32;
+  }
+
+  &-price {
+    background-color: #2a2a2a;
+    padding: 6px 10px;
+  }
+
+  &-hover-btn {
+    background-color: #2a2a2a;
+    padding: 9px 6px;
+    bottom: 0;
+    font-size: 14px;
+  }
+
+  &-sale {
+    font-size: 14px;
+    background-color: #2a2a2a;
+    left: 0;
+    right: 0;
+    top: -25px;
+    margin: 0 auto;
+    width: 50px;
+    text-align: center;
+    //border-radius: 50%;
+    //padding: 10px;
+    padding: 25px 10px 5px 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+  }
+
+  &-hover-show {
+    display: none;
+  }
+}
+
+.quick-view {
+  left: 8px;
+}
+
+.add-to-cart {
+  right: 8px;
+}
+
+.basket-icon {
+  font-size: 14px;
+}
+
+.furniture-card:hover .furniture-card-price {
+  background-color: #d58e32;
+}
+
+.furniture-card:hover .furniture-card-hover-show {
+  display: block;
+}
+
+.furniture-card:hover .furniture-card-title {
+  color: #d58e32;
+}
+
+.filter {
+  &-title {
+    font-size: 16px;
+  }
+
+  &-categories {
+    list-style: none;
+
+    &-text {
+      cursor: pointer;
+
+      &-active {
+        color: #d58e32;
+      }
+    }
+
+    &-text:hover {
+      color: #d58e32;
+    }
+
+    &-district {
+      background-color: #2a2a2a;
+      padding: 2px 9px;
+      border-radius: 50%;
+
+      &-active {
+        background-color: #d58e32;;
+      }
+    }
+
+    &-text:hover ~ .filter-categories-district {
+      background-color: #d58e32;
+    }
+
+
+  }
+}
+
+.slider-selection {
+  background: #2a2a2a;
+}
+
+.slider-handle {
+  border: 3px solid #d58e32;
+  background: #ffffff;
+}
+
+.slider-track-high, .slider-track-low {
+  background: #ffffff;
+  border: 1px solid #D4D4D4;
+}
+
+.btn-filter {
+  letter-spacing: 1px;
+  background-color: #2a2a2a;
+}
+
+.btn-filter:hover {
+  background-color: #d58e32;
+}
+
+.slider.slider-horizontal {
+  width: 100%;
+}
+
+.filtered-range {
+  color: #2A2A2A;
+  border: 1px solid #D4D4D4;
+}
+
+.custom-control-label {
+  padding-left: 5px;
+  font-weight: 600;
+  color: #2A2A2A;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-red::before {
+  background-color: #FA5F66 !important;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-black::before {
+  background-color: #454545 !important;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-yellow::before {
+  background-color: #E9E600 !important;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-blue::before {
+  background-color: #0190D3 !important;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-pink::before {
+  background-color: #F72FE4 !important;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-green::before {
+  background-color: #14D400 !important;
+  border: none;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label {
+  color: #d58e32;
+}
+
+.custom-checkbox .custom-control-input:focus ~ .checkbox-default::before {
+  border: 1px solid #2A2A2A;
+}
+
+.custom-checkbox .custom-control-input ~ .checkbox-default::before {
+  border: 1px solid #2A2A2A;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .checkbox-default::before {
+  background-color: #d58e32;
+  border: none;
+}
+
+.custom-checkbox > .custom-control-input:checked ~ .filter-categories-district {
+  background-color: #d58e32;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.tag {
+  font-weight: 600;
+  color: #959595;
+  border: 1px solid #D7D7D7;
+}
+
+.tag-active {
+  color: #d58e32;
+  border-color: #d58e32;
+}
+
+.tag:hover {
+  color: #d58e32;
+  border-color: #d58e32;
+}
+
+.show-more-btn {
+  color: #2A2A2A;
+  padding: 6px 13px 8px 13px;
+  font-size: 24px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+
+.show-more-btn:hover {
+  color: #d58e32;
+}
+
+.mobile-padding {
+  margin: 0 18vw;
+}
+
+.show-filters {
+  border: 1px solid #D4D4D4;
+  color: #2A2A2A;
+}
+
+.show-filters:hover {
+  color: #d58e32;
+  border-color: #d58e32;
+}
+

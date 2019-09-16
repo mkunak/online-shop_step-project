@@ -1,0 +1,34 @@
+@import "../components/mixins";
+@import "../components/modal/modal";
+
+.navbar-top {
+  background-color: #434343;
+}
+
+.nav-top-item {
+  @include InlineFlexCenter;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-top-link, .nav-currency, .nav-language {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-top-link:hover::after {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 4px;
+  content: '';
+  width: 70%;
+  transform: translate(-50%);
+  border-bottom: 1px solid #fff;
+}
+
+@media only screen and (max-width: 363px) {
+  .nav-currency, .nav-language, .nav-top-link {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,97 @@
+@import "slick";
+@import "slick-theme";
+@import "../mixins";
+
+.slider-mini-image-wrapper {
+  @include flexCenter;
+  width: 70px !important;
+  height: 70px;
+  background: #ddd;
+  outline: none;
+  cursor: pointer;
+  opacity: .6;
+  transition: .3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slider-avatar-mini-img {
+  width: 50px;
+  height: 50px;
+}
+
+.img-big {
+  margin: 0 auto;
+  height: 415px;
+}
+
+.slider-wrapper-control {
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.btn-control {
+  position: absolute;
+  top: 10px;
+  @include flexCenter;
+  width: 33px;
+  height: 70px;
+  background-color: $primary-color;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.action-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.btn-control-prev {
+  left: -37px;
+}
+
+.btn-control-prev .prev, .btn-control-next .next {
+  transition: .3s;
+  color: #ffffff;
+}
+
+.btn-control-prev, .btn-control-next {
+  &:hover .prev {
+    color: #ca9482;
+  }
+
+  &:hover .next {
+    color: #ca9482;
+  }
+}
+
+.btn-control-next {
+  right: -38px;
+}
+
+.slick-track .slick-current {
+  opacity: 1;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  height: auto;
+}
+
+@import "../btn-action/btn-action";
+
+@import "media/product-slider-breakpoint-992-1999";
+@import "media/product-slider-breakpoint-473-767";
+@import "media/product-slider-breakpoint-472";
+@import "media/product-slider-breakpoint-350";
